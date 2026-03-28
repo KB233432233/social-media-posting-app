@@ -1,0 +1,63 @@
+.profiler {
+    width: 100%;
+}
+
+.profiler .cover-photo {
+    height: 200px;
+}
+
+.profiler .cover-photo img {
+    width: 100%;
+    height: 200px;
+    opacity: 70%;
+    background-color: #3d3d3d;
+}
+
+.profiler .p-name-pic {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profiler .p-name-pic .pic-name {
+    position: relative;
+    height: 250px;
+}
+
+.profiler .p-name-pic .pic-name .avatar {
+    position: absolute;
+    top: -59px;
+}
+
+.profiler .p-name-pic .pic-name h2 {
+    margin-top: 70px;
+}
+
+.p-name-pic #coverPic {
+    display: none;
+}
+
+.p-name-pic .coverlabel {
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border-radius: 8px;
+    color: rebeccapurple;
+    margin-right: 5px;
+}
+
+.p-name-pic .coverlabel:hover {
+    box-shadow: 0px 0px 20px 10px grey
+}
+
+.p-name-pic .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

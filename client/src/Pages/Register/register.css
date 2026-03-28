@@ -1,0 +1,76 @@
+.register-page-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
+.left-side {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-page-container .left-side img {
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.register-page-container .right-side {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.right-side .inputs {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-side .inputs input {
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.right-side .inputs .submit-button {
+    border: 1px solid rgb(39, 121, 245);
+    padding: 12px;
+    border-radius: 20px;
+    background: rgb(39, 121, 245);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right-side .inputs+button {
+    min-width: 300px;
+}
+
+.right-side .inputs .submit-button:hover {
+    border: 1px solid rgb(39, 121, 245);
+    background: transparent;
+    color: rgb(39, 121, 245);
+    transition: all 0.3s ease;
+}
+
+.right-side .inputs .back-button {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid rgb(39, 121, 245);
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(39, 121, 245);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+}

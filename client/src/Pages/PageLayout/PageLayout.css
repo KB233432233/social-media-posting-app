@@ -1,0 +1,155 @@
+.page-layout {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding-top: 50px;
+}
+
+.left-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.left-bar .logocon {
+    align-self: flex-start;
+    width: 100%;
+    display: flex;
+    background-color: black;
+}
+
+.left-bar .logocon img {
+    width: 100px;
+}
+
+.left-bar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left-bar ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.left-bar ul li a {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.left-bar ul li:hover {
+    background-color: #615f5f;
+}
+
+
+.left-bar ul button {
+    background-color: #00a6dc;
+    border-radius: 20px;
+}
+
+.left-bar ul button:hover {
+    background-color: lightblue;
+}
+
+
+.middle-page {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.right-bar {
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    right: 5%;
+    z-index: -1;
+}
+
+.right-bar .search-bar {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.right-bar .search-bar .icon {
+    position: absolute;
+    left: 7%;
+    top: 9px;
+}
+
+.right-bar .search-bar input {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+}
+
+.right-bar .suggested {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media(max-width: 768px) {
+
+    .left-bar {
+        bottom: 0;
+        z-index: 10;
+        height: 6%;
+        width: 100%;
+    }
+
+    .left-bar ul {
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .left-bar .logocon,
+    .left-bar span {
+        display: none;
+    }
+
+    .middle-page {
+        left: 3%;
+        width: 90%;
+    }
+
+    .middle-page .home-container {
+        margin-bottom: 75px;
+    }
+}
+
+@media(max-width: 1120px) {
+    .right-bar {
+        display: none;
+    }
+}
+
+
+.left-bar ul li .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
